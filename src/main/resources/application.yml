@@ -1,0 +1,16 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/OnGkKTPM/config_server
+          default-label: main
+        bootstrap: false
+#  default-label là nhánh branch trên github
+#http://localhost:8888/config-server/default
